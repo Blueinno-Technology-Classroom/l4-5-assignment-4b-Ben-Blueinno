@@ -1,12 +1,15 @@
 # ✅ Complete this function, replace `pass` with your solution:
 def count(numbers) -> dict:
-    pass
+    result = {}
+    typeOfNumber = []
+    for num in numbers:
+        if num not in typeOfNumber:
+            typeOfNumber.append(num)
+            result[num] = 1
+        else:
+            result[num] += 1
+    return result
 
-
-
-
-
-    
 
 # ❌ Do NOT change these lines:
 list1 = [1, 1, 1, 2, 2, 3, 4, 4, 4, 4, 5, 5, 5, 5, 5]
